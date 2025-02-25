@@ -1,0 +1,13 @@
+prog MEDIA
+Start program
+NÚMERICO n1, n2, M
+  print "digite a nota 1"
+    read n1;
+  print " Digite a nota 2"
+    read n2
+  M = (n1+n2)/2
+    print " Media = ", M;
+  if M>=6
+    then print "Aprovado"
+    else print "Reprovado"
+End Program
