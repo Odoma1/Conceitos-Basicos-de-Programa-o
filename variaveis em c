@@ -1,0 +1,22 @@
+VARIAVEIS EM C
+  NUMERICAS->Real = INT ( INT = idade; )
+           |->Inteiro = FLOAT ( FLOAT = N1, N2, Media; )
+  TEXTO-> 1 Caracter ou conjunto de caracteres = CHAR ( CHAR NOME[30], SEXO; )
+    |->NUNCA COMEÇAR COM UM NUMERO, HIFEN ..                      |-> TOTAL DE CARACTERES+ A QUANTIDADE DE ESPAÇOS
+
+OPERAÇÂO COM VARIAVEIS - INT E FLOAT
+_________________
+INT A=7, B=2, C; 
+C=A-B; ->9
+C=A+B; ->5
+C=A.B; ->14
+C=A/B; ->3 (SERIA 3,5 SE AS VARIAVEIS FOSSEM FLOAT AO INVES DE INT, JA QUE INT NÃO ACEITA NUMEROS COM VIGULA)
+C=A%B; ->1
+  |  |->INT
+  |->RESTO
+___________________
+INT A=8; TESTE DE MESA
+A=A+1; ->9
+A=A+1; ->10
+A=A+A; ->20
+  |->A=(A+1)+1
