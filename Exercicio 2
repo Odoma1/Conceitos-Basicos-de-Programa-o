@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+ float Numero1, Numero2, Numero3, Resultado;
+ 
+ printf("Por favor digite o primeiro numero:");
+ scanf("%f", &Numero1);
+ printf("Por favor digite o segundo numero:");
+ scanf("%f", &Numero2);
+ printf("Por favor digite o terceiro numero:");
+ scanf("%f", &Numero3);
+ Resultado= (Numero1*Numero2*Numero3);
+ printf("A multiplicação total entre os 3 digitos foram:%f", Resultado);
+    
+}
