@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+   float Nota1, nota2, nota3, media;
+   printf("Digite a nota 1:");
+   scanf("%f", &Nota1);
+   printf("Digite a nota 2:");
+   scanf("%f", &nota2);
+   media= (Nota1+nota2)/2;
+   printf("Sua media foi :%f", media);
+}
