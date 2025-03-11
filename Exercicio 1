@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+   float Numero1, Numero2, resultado;
+ 
+   printf("Digite o primeiro Numero:");
+   scanf("%f", &Numero1);
+   printf("Digite o segundo Numero:");
+   scanf("%f", &Numero2);
+   resultado= (Numero1-Numero2);
+   printf("Sua subtração deu um total de :%f", resultado);
+}
