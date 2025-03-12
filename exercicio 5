@@ -1,0 +1,9 @@
+#include <stdio.h>
+main()
+{
+	float preco, novo;
+	printf("informe o preço atual do produto:");
+	scanf("%f", &preco);
+	novo=preco-preco*0.1;
+	printf("novo preço: %f", novo);
+}
