@@ -1,0 +1,10 @@
+#include <stdio.h>
+main()
+{
+	float lado, areadoquadrado;
+	printf("Qual o lado do quadrado:");
+	scanf("%f", &lado);
+	areadoquadrado= lado*lado;
+	printf("A area total do quadrado é :%f",areadoquadrado);
+	
+}
