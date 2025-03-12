@@ -1,0 +1,11 @@
+#include <stdio.h>
+main()
+{
+	float diagonalmaior, diagonalmenor, areadoretangulo;
+	printf("Informe o valor da diagonal maior:");
+	scanf("%f", &diagonalmaior);
+	printf("Informe o valor da diagonal menor:");
+	scanf("%f", &diagonalmenor);
+	areadoretangulo= (diagonalmaior*diagonalmenor)/2;
+	printf("A area do retangulo é igual á:%f", areadoretangulo);
+}
