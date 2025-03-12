@@ -1,0 +1,13 @@
+#include <stdio.h>
+main()
+{
+ 	  float basemaior, basemenor, altura, areadotrapezeo;
+ 	  printf("Informe o valor da base maior:");
+ 	  scanf("%f", &basemaior);
+ 	  printf("Informe o valor da base menor:");
+ 	  scanf("%f", &basemenor);
+ 	  printf("Informe o valor da altura:");
+ 	  scanf("%f", &altura);
+ 	  areadotrapezeo = (basemaior*basemenor)/altura;
+ 	  printf("A Area do Trapezeo é igual à:%f",areadotrapezeo );
+}
