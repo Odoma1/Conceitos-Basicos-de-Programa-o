@@ -9,4 +9,7 @@ main()
 	comissao=vendas*0.004;
 	final=comissao+salario;
 	printf("salario final: %f", final);
+	printf("comissao: %f", comissao);
+
 }
+
