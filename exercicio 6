@@ -1,0 +1,12 @@
+#include <stdio.h>
+main()
+{
+	float salario, vendas, comissao, final;
+	printf("informe Seu salario:");
+	scanf("%f", &salario);
+	printf("informe o valor da suas vendas mensais:");
+	scanf("%f", &vendas);
+	comissao=vendas*0.004;
+	final=comissao+salario;
+	printf("salario final: %f", final);
+}
