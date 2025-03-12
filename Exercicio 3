@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float N1, N2, Resultado;
+
+    printf("Por favor digite o primeiro numero: ");
+    scanf("%f", &N1);
+
+    do {
+        printf("Por favor digite o segundo numero: ");
+        scanf("%f", &N2);
+        
+        if (N2 == 0) {
+            printf("Digite outro numero (diferente de zero): ");
+            scanf("%f", &N2);
+        }
+    } while (N2 == 0); // Repete se N2 ainda for zero
+
+    Resultado = N1 / N2;
+    printf("Sua divisao foi igual a: %f", Resultado);
+
+    return 0;
+}
