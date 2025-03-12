@@ -1,0 +1,9 @@
+#include <stdio.h>
+main()
+{
+ 	  float pesokg, pesogr;
+ 	  printf("Coloque o peso em Kilogramas:");
+ 	  scanf("%f", &pesokg);
+ 	  pesogr= pesokg*1000;
+ 	  printf("O peso em Gramas foi:%f", pesogr);
+}
