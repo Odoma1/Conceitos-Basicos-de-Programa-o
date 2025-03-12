@@ -1,0 +1,11 @@
+#include <stdio.h>
+main()
+{
+ 	  float pesoatual, peso1, peso2;
+ 	  printf("Digite seu pesoa atual:");
+ 	  scanf("%f", &pesoatual);
+ 	  peso1= pesoatual*1.15;
+ 	  peso2= pesoatual*0.80;
+ 	  printf("Seu peso se você engordar 15%:%f\n", peso1);
+ 	  printf("Seu peso se você emagrecer 20%:%f", peso2);
+}
