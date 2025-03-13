@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+main() 
+{
+    float conta1, conta2, salario, divida1, divida2;
+    printf("Informe seu salario:");
+    scanf("%f", &salario);
+    printf("Informe a o valor da primeira conta para pagamento:");
+    scanf("%f", &conta1);
+   	printf("Informe a o valor da segunda conta para pagamento:");
+    scanf("%f", &conta2);
+    divida1= conta1*1.02;
+	divida2= conta2*1.02;
+	printf("\nValor da primeira divida:%f\n", divida1);
+	printf("\nValor da segunda divida:%f\n", divida2);
+	printf("\nValor total da divida:%f\n", divida1+divida2);
+	
+}
