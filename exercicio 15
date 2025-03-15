@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+main() 
+{
+	int tempc, tempf;
+	printf("Informe a temperatura em Celsius:");
+	scanf("%i", &tempc);
+	tempf= (1.8*tempc) + 32;
+	printf("A tempceratura em Fabrenheit é igual á: %i", tempf);
+}
