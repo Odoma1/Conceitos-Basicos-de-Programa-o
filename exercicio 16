@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+main() 
+{
+	float tamanhocomodo, m2;
+	int  Pl, quantidadedel;
+	Pl= 18;
+	printf("informe o tamanho do comodo:");
+	scanf("%f", &tamanhocomodo);
+	m2= tamanhocomodo * tamanhocomodo;
+	quantidadedel= m2/Pl;
+	printf("A quantidade de lampadas necessarias para iluminar o local é igual á: %i", quantidadedel);
+}
