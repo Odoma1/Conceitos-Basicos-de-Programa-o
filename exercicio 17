@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+main() 
+{
+	char nome[30];
+	int idade;
+	printf("Me informe seu nome:");
+	scanf("%s", &nome);
+	printf("Me informe sua idade:");
+	scanf("%i", &idade);
+	printf("\nNOME: %s\n", nome);
+	printf("\nIDADE:%i\n", idade);
+}
