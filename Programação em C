@@ -23,3 +23,6 @@ A=A+A; ->20
 __________________________________________________________________________________________________________________________________
 imprima = printf
 Leia = scanf("%_, &_) %->Tipo da Variavel{Int->%i ; Float->%f ; Char->%c} [&->Nome da variavel]
+CHAR-> 1 caracter
+string-> mais caracteres-> char sexo,op, nome[30]/ ("%s")
+                                               |->limite de caracteres
