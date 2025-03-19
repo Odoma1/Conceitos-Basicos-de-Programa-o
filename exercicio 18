@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+
+main() {
+  char nome[30], endereco[30], cidade[30], UF[30], CEP[30], telefone[30], CPF[30], RG[30], datadenascimento[30], graudeescolaridade[30], cursoqueleciona[30];
+  printf("Informe seu nome:");
+  gets(nome);
+  printf("Informe seu endereco:");
+  gets(endereco);
+  printf("Informe seu cidade:");
+  gets(cidade);
+  printf("Informe seu UF:");
+  gets(UF);
+  printf("Informe seu CEP:(00000-000)");
+  gets(CEP);
+  printf("Informe seu telefone:(00 00000-0000)");
+  gets(telefone);
+  printf("Informe seu CPF:(000000000-00)");
+  gets(CPF);
+  printf("Informe seu RG:");
+  gets(RG);
+  printf("Informe seu datadenascimento:(dd/mm/yyyy)");
+  gets(datadenascimento);
+  printf("Informe seu graudeescolaridade:");
+  gets(graudeescolaridade);
+  printf("Informe seu cursoqueleciona:");
+  gets(cursoqueleciona);
+  printf("\nnome:%s\n", nome);
+  printf("\nendereco:%s\n", endereco);
+  printf("\ncidade:%s\n", cidade);
+  printf("\nUF:%s\n", UF);
+  printf("\nCEP:%s\n", CEP);
+  printf("\ntelefone:%s\n", telefone);
+  printf("\nRG:%s\n", RG);
+  printf("\ndatadenascimento:%s\n", datadenascimento);
+  printf("\ngraudeescolaridade:%s\n", graudeescolaridade);
+  printf("\ncursoqueleciona:%s\n", cursoqueleciona);
+  
+}
