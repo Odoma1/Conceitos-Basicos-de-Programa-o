@@ -26,3 +26,4 @@ Leia = scanf("%_, &_) %->Tipo da Variavel{Int->%i ; Float->%f ; Char->%c} [&->No
 CHAR-> 1 caracter
 string-> mais caracteres-> char sexo,op, nome[30]/ ("%s")
                                                |->limite de caracteres
+COMANDO EXCLUSIVO DE LEITURA DE STRING->gets(variavel);
