@@ -26,4 +26,14 @@ Leia = scanf("%_, &_) %->Tipo da Variavel{Int->%i ; Float->%f ; Char->%c} [&->No
 CHAR-> 1 caracter
 string-> mais caracteres-> char sexo,op, nome[30]/ ("%s")
                                                |->limite de caracteres
-COMANDO EXCLUSIVO DE LEITURA DE STRING->gets(variavel);
+COMANDO EXCLUSIVO DE LEITURA DE STRING->gets(variavel)
+______________________________________________________________________________________________________________________________
+# <math.h>
+sqrt(n1);
+      |->RAIZ QUADRADA DE N1
+cbrt(n1);
+      |->RAIZ CUBICA DE N1
+pow(N1,2);
+|    |  |->POTENCIA
+|    |->NUMERO
+|->POTENCIAÇÃO
