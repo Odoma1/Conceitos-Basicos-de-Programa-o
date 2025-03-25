@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+   int N1, ant, sus;
+   printf("escolha um numero de sua preferencia:");
+   scanf("%i", &N1);
+   ant= (N1-1);
+   sus= N1+1;
+   printf("\nO sucessor do numero escolhido é:%i\n", sus);
+   printf("\nO antecessor do numero escolhido é:%i\n", ant);
+   
+}
