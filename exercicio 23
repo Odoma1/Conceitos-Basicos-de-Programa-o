@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+   float N1, tercaparte;
+   printf("Digite um numero de sua preferencia:");
+   scanf("%f", &N1);
+   tercaparte= N1 / 3;
+   printf("A terça parte do numero escolhido foi:%.2f", tercaparte);
+}
