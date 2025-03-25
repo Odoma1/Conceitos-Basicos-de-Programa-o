@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float N1, N2, mult, sub, som;
+	 do {
+        printf("Por favor digite o primeiro numero: ");
+        scanf("%f", &N1);
+        
+        if (N1 == 0) {
+            printf("Digite outro numero (diferente de zero): ");
+            scanf("%f", &N1);
+        }
+    } while (N1 == 0);
+	   
+
+    do {
+        printf("Por favor digite o segundo numero: ");
+        scanf("%f", &N2);
+        
+        if (N2 == 0) {
+            printf("Digite outro numero (diferente de zero): ");
+            scanf("%f", &N2);
+        }
+    } while (N2 == 0); 
+    som= N1+N2;
+    sub= N1-N2;
+    mult= N1*N2;
+	printf("\nSeu Primeiro numero é igual à: %.2f\n", N1);
+    printf("\nSeu Segundo numero é igual à: %.2f\n", N2);
+    printf("\nA soma entre os dois numeros escolhidos foi: %.2f\n", som);
+    printf("\nA subtração entre os dois numeros escolhidos foi: %.2f\n", sub);
+    printf("\nA multiplicação entre os dois numeros escolhidos foi: %.2f\n", mult);
+    
+
+    return 0;
