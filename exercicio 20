@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+main() {
+	   char n1[120], n2[120];
+	   printf("Variavel A:");
+	   scanf("%s", n1);
+	   printf("Variavel B:");
+	   scanf("%s", n2);
+	   printf("\nVariavel A:%s\n", n2);
+	   printf("\nVariavel B:%s\n", n1);
+	  
+}
