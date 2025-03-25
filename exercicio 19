@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+main() {
+	   char nome[120], descricao[500], frequencia[120], mediaminima[120];
+	   printf("Nome da diciplina:");
+	   scanf("%s", nome);
+	   printf("Descreva a materia(limite de 500 caracteres):");
+	   scanf("%s", descricao);
+	   printf("Qual a frequencia minima para aprovação?:");
+	   scanf("%s", frequencia);
+	   printf("Qual a media minima para aprovação:");
+	   scanf("%s", mediaminima);
+	   printf("\nDisciplina:%s\n", nome);
+	   printf("\nFrequencia minima:%s\n", frequencia);
+	   printf("\nDescrição da diciplina:%s\n", descricao);
+	   printf("\nMedia minima para aprovação:%s\n", mediaminima);
+}
