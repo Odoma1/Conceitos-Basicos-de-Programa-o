@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	float N1, N2, raiz2, potencia2, potencia3, raiz3;
+ 	 do {
+         printf("Por favor digite seu numero: ");
+         scanf("%f", &N1);
+         
+         if (N1 == 0) {
+             printf("Digite outro numero (diferente de zero): ");
+             scanf("%f", &N1);
+         }
+     } while (N1 == 0);
+     raiz2= sqrt(N1);
+     raiz3= cbrt(N1);
+     potencia2= pow(N1,2);
+     potencia3= pow(N1,3);
+     printf("\n Seu numero ao quadrado:%.2f\n", potencia2);
+     printf("\n Seu numero ao cubo:%.2f\n", potencia3);
+     printf("\n Seu numero na raiz quadrada:%.2f\n", raiz2);
+      printf("\n Seu numero na raiz cubica:%.2f\n", raiz3);
+  }
