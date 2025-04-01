@@ -1,0 +1,12 @@
+#include<stdio.h>
+main()
+{
+	float n1, metade;
+	printf("Informe um numero: ");
+	scanf("%f", &n1);
+	if(n1<=20)
+	{
+		metade=n1/2;
+	}
+	printf("\n O valor informado sera: %.2f\n", metade);
+}
