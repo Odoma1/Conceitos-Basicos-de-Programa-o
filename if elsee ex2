@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+	int n1, n2, ad;
+	printf("Informe o primeiro numero: ");
+	scanf("%i", &n1);
+	printf("Informe o segundo numero: ");
+	scanf("%i", &n2);
+	ad= (n1+n2) ;
+	printf("\n O valor somado foi: %i\n",ad );
+	if(n1+n2<=10)
+	{
+	printf("\n Os valores informados, somados, foi maior que 10");
+	
+	}
+		
+}
