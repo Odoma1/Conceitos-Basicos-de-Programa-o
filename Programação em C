@@ -3,7 +3,7 @@ VARIAVEIS EM C
            |->Inteiro = FLOAT ( FLOAT = N1, N2, Media; )
   TEXTO-> 1 Caracter ou conjunto de caracteres = CHAR ( CHAR NOME[30], SEXO; )
     |->NUNCA COMEÇAR COM UM NUMERO, HIFEN ..                      |-> TOTAL DE CARACTERES+ A QUANTIDADE DE ESPAÇOS
-
+__________________________________________________________________________________________________________________________
 OPERAÇÂO COM VARIAVEIS - INT E FLOAT
 _________________
 INT A=7, B=2, C; 
@@ -20,14 +20,14 @@ A=A+1; ->9
 A=A+1; ->10
 A=A+A; ->20
   |->A=(A+1)+1
-__________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________
 imprima = printf
 Leia = scanf("%_, &_) %->Tipo da Variavel{Int->%i ; Float->%f ; Char->%c} [&->Nome da variavel]
 CHAR-> 1 caracter
 string-> mais caracteres-> char sexo,op, nome[30]/ ("%s")
                                                |->limite de caracteres
 COMANDO EXCLUSIVO DE LEITURA DE STRING->gets(variavel)
-______________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________
 # <math.h>
 sqrt(n1);
       |->RAIZ QUADRADA DE N1
@@ -37,3 +37,19 @@ pow(N1,2);
 |    |  |->POTENCIA
 |    |->NUMERO
 |->POTENCIAÇÃO
+__________________________________________________________________________________________________________________________
+CONDICIONAL 
+if(condição; v; f) -> if(tempo==sol; "praia"; "cinema"):                  A==B(comparação)   if->se
+                   |-> if(media>=6;"A";"R"):                              A=6(igualdade)     else->senão
+if(salario <=1500);
+{
+aumento= salario=1,30;
+}
+else if(salario<=300);
+{
+aumento= saario*1,20;
+}
+else
+{
+aumento= salario*1,10;
+}
