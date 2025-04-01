@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+	float sal, aumento;
+	printf("Informe o seu salario: ");
+	scanf("%f", &sal);
+	if(sal<=1500)
+	{
+		aumento=sal*0.3;
+	}
+	else if(sal<=3000)
+		{
+			aumento=sal*0.2;
+		}
+		else
+		{
+			aumento=sal*0.1;
+		}
+	printf("O valor do aumento sera: %f\n", aumento);
+	printf("Seu novo salario sera: %f\n", sal+aumento);
+}
