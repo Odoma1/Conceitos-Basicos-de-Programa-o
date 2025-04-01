@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+	float n1, n2;
+	printf("Informe o primeiro numero: ");
+	scanf("%f", &n1);
+	printf("Informe o segunda numero: ");
+	scanf("%f", &n2);
+	if(n1>n2)
+	{
+	printf("\n o maior numero é o:%.2f", n1);
+	printf("\n o menor numero é o:%.2f", n2);
+	}
+		else
+		{
+		printf("\n o maior numero é o:%.2f", n2);
+		printf("\n o menor numero é o:%.2f", n1);
+		}		
+	
+}
