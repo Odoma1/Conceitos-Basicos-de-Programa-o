@@ -1,0 +1,23 @@
+#include<stdio.h>
+main()
+{
+	float n1, n2,n3,n4, m;
+	printf("Informe a primeira nota: ");
+	scanf("%f", &n1);
+	printf("Informe a segunda nota: ");
+	scanf("%f", &n2);
+	m=(n1+n2)/2;
+	printf("media:%.2f", m);
+	if(m<=3)
+	{
+	printf("\n Reprovado");
+	}
+		else if(m<=7)
+		{
+		printf("\n Exame");
+		}		
+	else
+	{
+	printf("\n Aprovado");
+	}	
+}
