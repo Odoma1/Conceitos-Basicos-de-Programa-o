@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	float n1,e, aumento;
+	printf("INFORME O SEU SALARIO ATUAL:");
+	scanf("%f", &e);	
+		if(e<=1500)
+	{
+	aumento= (e*1.35);
+	printf("\nSEU SALARIO REAJUSTADO FOI PARA:%.2f\n", aumento);;
+	  printf("\nO AUMENTO FOI IGUAL À:%.2f\n", aumento-e);
+	  }
+	else
+	{
+	aumento= (e*1.15);
+	printf("\nSEU SALARIO REAJUSTADO FOI PARA:%.2f\n", aumento);
+	printf("\nO AUMENTO FOI IGUAL À:%.2f\n", aumento-e);
+	}
+     
+}
