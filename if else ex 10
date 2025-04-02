@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	float n1,e, aumento;
+	printf("INFORME O SEU SALARIO ATUAL:");
+	scanf("%f", &e);	
+		if(e>1500)
+	{
+	printf("\n SEM DIREITO À AUMENTO \n");
+	  }
+	else
+	{
+	aumento= (e*1.30);
+	printf("\nSEU SALARIO REAJUSTADO FOI PARA:%.2f\n", aumento);
+	}
+     
+}
