@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	float n1, n2, e, r21, r22 , r31, r32, p;
+	printf("1->SELECIONE A OPERAÇÂO DESEJADA, 1->O primeiro número elevado ao segundo, 2->Raiz quadrada de cada um dos números, 3->Raiz cúbica de cada um dos números:");
+	scanf("%f", &e);	
+		if(e>3)
+	{
+	printf("\n ERRO, ESCOLHA OUTRA OPÇÃO \n");
+	  }
+	else
+	{
+	printf("Informe o primeiro numero: ");
+	scanf("%f", &n1);
+	printf("Informe o segunda numero: ");
+	scanf("%f", &n2);
+     if(e==1)
+ 	{
+  	p= pow(n1,n2);
+     printf("\n O primeiro número elevado ao segundo é igual à:%.2f", p);
+	  }
+		else if(e==2)
+         {
+		 r21= sqrt(n1);
+		 r22= sqrt(n2);
+		 printf("\n Raiz quadrada do primeiro numero é:%.2f", r21);
+		 printf("\n Raiz quadrada do segundo numero é:%.2f", r22);
+		 }		
+		else
+		{
+		r31= cbrt(n1);
+		 r32= cbrt(n2);
+		 printf("\n Raiz quadrada do primeiro numero é:%.2f", r31);
+		 printf("\n Raiz quadrada do segundo numero é:%.2f", r32);
+		}		
+	}
+}
