@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float n1, n2, i;
+    printf("Informe o codigo do produto: ");
+    scanf("%f", &n1);
+    if(n1=1)
+    {
+        printf("\nORIGEM : SUL");
+        			
+    }
+    else if (n1==2)
+    {
+        printf("\nORIGEM : NORTE");
+    }
+    else if (n1==3)
+    {
+        printf("\nORIGEM : LESTE");
+    }
+		else if (n1==4)
+    {
+        printf("\nORIGEM : OESTE");
+    }
+		else if (n1==5 || n1==6)
+    {
+        printf("\nORIGEM : NORDESTE");
+       }
+			else if (n1==7 || n1==8 || n1==9)
+    {
+        printf("\nORIGEM : SUDESTE");
+        }
+			else if (n1>=10 && n1<=20)
+    {
+        printf("\nORIGEM : CENTRO-OESTE");
+    }
+		else if (n1>=21 && n1<=30)
+    {
+        printf("\nORIGEM : NORDESTE");
+    }
+  
+    return 0;
+}
