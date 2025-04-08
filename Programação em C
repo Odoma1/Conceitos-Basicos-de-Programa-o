@@ -39,8 +39,8 @@ pow(N1,2);
 |->POTENCIAÇÃO
 __________________________________________________________________________________________________________________________
 CONDICIONAL 
-if(condição; v; f) -> if(tempo==sol; "praia"; "cinema"):                  A==B(comparação)   if->se
-                   |-> if(media>=6;"A";"R"):                              A=6(igualdade)     else->senão
+if(condição; v; f) -> if(tempo==sol; "praia"; "cinema"):                  A==B(comparação)   if->se           &&->e
+                   |-> if(media>=6;"A";"R"):                              A=6(igualdade)     else->senão      ||->ou
 if(salario <=1500);
 {
 aumento= salario=1,30;
