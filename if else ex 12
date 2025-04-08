@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float n1, n2;
+    printf("Informe seu Salário médio: ");
+    scanf("%f", &n1);
+
+    if(n1 < 2000)
+    {
+        n2 = n1 * 0.1;
+        printf("Você tem direito à: %.2f\n", n2);
+    }
+    else if(n1 >= 2000 && n1 < 3000)
+    {
+        n2 = n1 * 0.2;
+        printf("Você tem direito à: %.2f\n", n2);
+    }
+    else if(n1 >= 3000 && n1 < 4000)
+    {
+        n2 = n1 * 0.25;
+        printf("Você tem direito à: %.2f\n", n2);
+    }
+    else
+    {
+        n2 = n1 * 0.3;
+        printf("Você tem direito à: %.2f\n", n2);
+    }
+
+    return 0;
+}
