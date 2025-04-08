@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float n1, n2, i;
+    printf("Informe o valor do produto: ");
+    scanf("%f", &n1);
+    if(n1 <= 50)
+    {
+        n2 = n1 * 0.05;
+        printf("\nO valor do produto vai aumentar em : %.2f\n", n2);
+        	printf("\nValor novo: %.2f\n", n2+n1);			
+    }
+    else if(n1 > 50 && n1 <= 100)
+    {
+         n2 = n1 * 0.10;
+        printf("\nO valor do produto vai aumentar em : %.2f\n", n2);
+        	printf("\nValor novo: %.2f\n", n2+n1);	;
+    }
+    else
+    {
+    	n2 = n1 * 0.15;
+        printf("\nO valor do produto vai aumentar em : %.2f\n", n2);
+        	printf("\nValor novo: %.2f\n", n2+n1);	
+    }
+
+    return 0;
+}
