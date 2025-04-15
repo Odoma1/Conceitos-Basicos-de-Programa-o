@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	char peso;
+	int idade;
+	printf("Informe seu Peso:");
+	scanf("%f", &peso);
+	printf("Informe sua idade:");
+	scanf("%i", &idade);
+	if (peso<=60 || idade<20)
+	{
+	printf("Você está no grupo de risco 9");
+	}
+	else if (peso<=60 || idade>=20 && idade<50)
+	{
+	printf("Você está no grupo de risco 6");
+	}
+	else if (peso<=60 || idade>50)
+	{
+	printf("Você está no grupo de risco 3");	
+	}
+	else if (peso>60 && peso<90 || idade<20)
+	{
+	printf("Você está no grupo de risco 8");
+	}
+	else if (peso>60 && peso<90 || idade>=20 && idade<50)
+	{
+	printf("Você está no grupo de risco 5");
+	}
+	else if (peso>60 && peso<90 || idade>50)
+	{
+	printf("Você está no grupo de risco 2");
+	}
+	else if (peso>90 || idade<20)
+	{
+	printf("Você está no grupo de risco 7");
+	}
+	else if (peso>90 || idade>=20 && idade<50)
+	{
+	printf("Você está no grupo de risco 4");
+	}
+	else
+	{
+	printf("Você está no grupo de risco 1");
+}
+
+}
