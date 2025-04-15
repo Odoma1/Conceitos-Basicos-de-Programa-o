@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main() {
+    int cod, quantidade;
+    float precoUnitario, precoTotal, desconto, precoFinal;
+
+    printf("Informe o código do produto (1 a 40): ");
+    scanf("%d", &cod);
+    printf("Informe a quantidade comprada: ");
+    scanf("%d", &quantidade);
+
+
+    if (cod >= 1 && cod <= 10) {
+        precoUnitario = 10.0;
+    } else if (cod >= 11 && cod <= 20) {
+        precoUnitario = 15.0;
+    } else if (cod >= 21 && cod <= 30) {
+        precoUnitario = 20.0;
+    } else if (cod >= 31 && cod <= 40) {
+        precoUnitario = 30.0;
+    } else {
+        printf("Código do produto inválido!\n");
+        return 1;
+    }
+
+ 
+    precoTotal = precoUnitario * quantidade;
+
+    if (precoTotal < 250.0) {
+        desconto = precoTotal * 0.05;
+    } else if (precoTotal <= 500.0) {
+        desconto = precoTotal * 0.10;
+    } else {
+        desconto = precoTotal * 0.15;
+    }
+
+    precoFinal = precoTotal - desconto;
+    
+	printf("\n--- RESUMO DA COMPRA ---\n");
+    printf("Preço unitário: R$ %.2f\n", precoUnitario);
+    printf("Preço total:    R$ %.2f\n", precoTotal);
+    printf("Desconto:       R$ %.2f\n", desconto);
+    printf("Preço final:    R$ %.2f\n", precoFinal);
+
+    return 0;
+}
