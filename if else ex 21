@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3, num4;
+    int maior, meio1, meio2, menor;
+    printf("Digite três números em ordem crescente:\n");
+    printf("1º número: ");
+    scanf("%i", &num1);
+    printf("2º número: ");
+    scanf("%i", &num2);
+    printf("3º número: ");
+    scanf("%i", &num3);
+    printf("Digite o quarto número (sem ordem): ");
+    scanf("%i", &num4);
+    if (num4 >= num3) {
+         maior = num4;
+        meio1 = num3;
+        meio2 = num2;
+        menor = num1;
+    } else if (num4 >= num2) {
+        maior = num3;
+        meio1 = num4;
+        meio2 = num2;
+        menor = num1;
+    } else if (num4 >= num1) {
+        maior = num3;
+        meio1 = num2;
+        meio2 = num4;
+        menor = num1;
+    } else {
+        maior = num3;
+        meio1 = num2;
+        meio2 = num1;
+        menor = num4;
+    }
+
+    printf("\nNúmeros em ordem decrescente:\n");
+    printf("%d\n", maior);
+    printf("%d\n", meio1);
+    printf("%d\n", meio2);
+    printf("%d\n", menor);
+
+    return 0;
+}
