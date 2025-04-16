@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+	float hf , he, H;
+	printf("Informe o numero de horas extras:");
+	scanf("%f", &he);
+	printf("Informe o numero de horas faltantes:");
+	scanf("%f", &hf);
+	H=he-(2/3 *(hf));
+	if (H<0.600)
+	    {
+	   printf("SEU PREMIO FOI DE R$100,00");
+	    }
+		  else if(H>=0.600 || H<1.2)
+  	  	  	    {
+			    printf("SEU PREMIO FOI DE R$200,00");
+				}
+				else if(H>=1.2 || H<1.8)
+				 {
+				  printf("SEU PREMIO FOI DE R$200,00");
+				  }
+		    	   else if(H>=1.2 || H<1.8)
+ 					 { 
+				    printf("SEU PREMIO FOI DE R$300,00");
+ 					}
+					 else if(H>=1.8 || H<2.4)
+				   	 	  {	
+		  			  printf("SEU PREMIO FOI DE R$400,00");
+							}
+							  else
+				   		 	 {
+						  printf("SEU PREMIO FOI DE R$500,00");
+						  }		  	   
+}
