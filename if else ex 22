@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+ float peso, peso1;
+ char nome[120], nome1[120];
+ printf("\nInforme o Nome da primeira pessoa:\n");
+ scanf("%s", &nome);
+ printf("\nInforme o peso da(o) %s\n", nome);
+ scanf("%f", &peso);
+ printf("\nInforme o Nome da primeira pessoa:\n");
+ scanf("%s", &nome1);
+ printf("\nInforme o peso da(o) %s\n", nome1);
+ scanf("%f", &peso1);
+	if(peso1>peso)
+	{
+	printf("\n O mais pesado é o(a): %s", nome1);
+	}
+		else
+	{
+	printf("\n O mais pesado é o(a): %s", nome);
+	}
+}
