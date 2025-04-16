@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() 
+{
+int n1;
+printf("\n Informe um numero qualquer:\n ");
+scanf("%i", &n1);
+ if(n1 % 2 ==0)
+ {
+ 	printf("%d é um número par.\n", n1);
+  } 
+  else 
+  {
+    printf("%d é um número ímpar.\n", n1);
+  }
+}
