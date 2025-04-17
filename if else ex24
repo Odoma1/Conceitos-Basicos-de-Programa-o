@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	int n1 ;
+	printf("Informe qualquer Numero desejado:");
+	scanf("%i", &n1);
+	if(n1 % 3 ==0)
+	{
+	printf("E MULTIPLO DE 3");
+	}
+	else  
+	{
+	printf("NAO E MULTIPLO DE 3");
+	}
+}
