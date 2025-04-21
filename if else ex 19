@@ -1,75 +1,55 @@
 #include <stdio.h>
 
-int main() 
-{
+int main() {
     int cod;
-    char  cod1;
-	float preco , valor, valor1, i, vn;
-    printf("Informe o código do produto 1-limpeza , 2-alimentação , 3-vestuario:");
-    scanf("%i", &cod);
-    printf("Informe a categoria do item, (R-produtos que necessitam de refrigeração; e N-produtos que não necessitam de refrigeração: ");
-    scanf("%c", &cod1);
-	printf("Informe o preço do item: ");
+    char cod1;
+    float preco, valor, vn;
+
+    printf("Informe o código do produto (1-limpeza, 2-alimentação, 3-vestuário): ");
+    scanf("%d", &cod);
+
+    printf("Informe o preço do item: ");
     scanf("%f", &preco);
 
-    if (preco<=25 && cod==1)
-    {
-	valor1=(preco*0.05);
-    valor=preco+valor1;
-	printf("O novo valor do produto com o imposto é: %.2f", valor);
-	}
-	 else if (preco<=25 && cod==2)
-    {
-	valor1=(preco*0.08);
-    valor=preco+valor1;
-	printf("O novo valor do produto com o imposto é: %.2f", valor);
-	}
-	 else if (preco<=25 && cod==3)
-    {
-	valor1=(preco*0.10);
-    valor=preco+valor1;
-	printf("O novo valor do produto com o imposto é: %.2f", valor);
+    printf("Informe a categoria do item (R - refrigeração, N - não necessita): ");
+    scanf(" %c", &cod1);
+    if (preco <= 25) {
+        if (cod == 1)
+            valor = preco + (preco * 0.05);
+        else if (cod == 2)
+            valor = preco + (preco * 0.08);
+        else if (cod == 3)
+            valor = preco + (preco * 0.10);
+        else {
+            printf("Código inválido.\n");
+            return 1;
+        }
+    } else {
+        if (cod == 1)
+            valor = preco + (preco * 0.12);
+        else if (cod == 2)
+            valor = preco + (preco * 0.15);
+        else if (cod == 3)
+            valor = preco + (preco * 0.18);
+        else {
+            printf("Código inválido.\n");
+            return 1;
+        }
     }
-    else if(preco>25 && cod==1)
-    {
-	valor1=(preco*0.12);
-    valor=preco+valor1;
-	printf("O novo valor do produto com o imposto é: %.2f", valor);
-	}
-	 else if(preco>25 && cod==2)
-    {
-	valor1=(preco*0.15);
-    valor=preco+valor1;
-	printf("O novo valor do produto com o imposto é: %.2f", valor);
-	}
-	 else if (preco>25 || cod==3)
-    {
-	valor1=(preco*0.18);
-    valor=preco+valor1;
-	printf("O novo valor do produto com o imposto é: %.2f", valor);
-	}
-	if (cod1=='R' || cod==2)
-	{
-	i=valor*0.05;
-	vn=i+valor;
-	printf("O novo valor do produto com o imposto é: %.2f", vn);
-	}
-	else
-	{
-	i=valor*0.08;
-	vn=i+valor;
-	printf("O novo valor do produto com o imposto é: %.2f", vn);
-	}
-	if (preco<=50 || vn<=50)
-	{
-	printf("BARATO");
-	}
-	else if(preco>50 && preco<125 || vn>50 && vn<125 )
-	{
-	printf("NORMAL");
-	}
-	else if (preco>=125 || vn>=125)
-	{
-	printf("CARO");
-	}
+
+    printf("\nValor com imposto inicial: %.2f\n", valor);
+    if (cod1 == 'R' || cod1 == 'r' || cod == 2)
+        vn = valor + (valor * 0.05);
+    else
+        vn = valor + (valor * 0.08);
+
+    printf("Valor final com acréscimo adicional: %.2f\n", vn);
+    if (vn <= 50)
+        printf("Classificação: BARATO\n");
+    else if (vn > 50 && vn < 125)
+        printf("Classificação: NORMAL\n");
+    else
+        printf("Classificação: CARO\n");
+
+    return 0;
 }
