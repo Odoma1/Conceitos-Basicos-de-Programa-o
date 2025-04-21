@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+ int main()
+ {
+ 	int op, n1, n2, n3; 
+ 	printf("Selecione a opção 2,3 ou 4:");
+ 	scanf("%i", &op);
+ 	printf("informe o um numero qualquer:");
+ 	scanf("%i", &n1);
+ 	printf("informe o um numero qualquer:");
+ 	scanf("%i", &n2);
+ 	printf("informe o um numero qualquer:");
+ 	scanf("%i", &n3);
+ switch (op)
+{
+   case 2:
+     printf("%i", n1);
+   break;
+
+   case 3:
+     printf("%i", n2);
+   break;
+
+   case 4:
+     printf("%i", n3);
+	 break;
+}		
+ }
