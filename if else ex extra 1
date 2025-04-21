@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	float n1, n2; 
+	printf("Informe o Primeiro numero:");
+	scanf("%f", &n1);
+	printf("Informe o Segundo numero:");
+	scanf("%f", &n2);
+	if (n1<n2)
+	{
+		printf("%.2f é maior que %.2f", n2,n1);
+	}
+	else if (n1>n2)
+	{
+		printf("%.2f e maior que %.2f", n1,n2);
+	}
+	else
+	{
+		printf("%.2f e igual a %.2f", n1,n2);
+	}
+	
+}
