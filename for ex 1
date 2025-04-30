@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n, i;
+	float raiz;
+    for(i = 1; i <= 4; i++)
+    {
+        printf("Informe os numeros: ");
+        scanf("%i", &n);         
+
+        raiz = sqrt(n);        
+        printf("A raiz desse numero é %.2f\n", raiz); 
+    }
+
+    return 0;
+}
