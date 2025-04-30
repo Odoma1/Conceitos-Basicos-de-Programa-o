@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	int n, i;
+	for(i=260; i>=250; i--)
+	{  
+		printf("%i\n", i);
+  }
+	
+}
