@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	int n, soma, i;
+	for(i=105; i>=100; i--)
+	{  
+		printf("%i\n", i);
+  		soma= soma + i; 
+	}    
+	printf("A soma dos numeros é:%i", soma);
+  }
