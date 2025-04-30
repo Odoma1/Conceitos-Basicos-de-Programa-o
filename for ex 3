@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	int n, i;
+	float n1, mult;
+	printf("Informe quantos numeros serao lidos:\n");
+	scanf("%i", &n);
+	for(i = 1; i<=n; i++)
+	{
+		printf("Informe o numero:");
+		scanf("%f", &n1);
+		mult= n1*3;
+		printf("o triplo desse numero é:%.2f\n", mult);
+	}
+	
+}
