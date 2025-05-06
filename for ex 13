@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int soma_pares = 0, soma_impares = 0;
+    int contador_pares = 0, contador_impares = 0;
+    int total_numeros = 906 - 85 + 1; 
+
+    printf("--- Números Pares e Ímpares ---\n");
+
+    for (int i = 85; i <= 906; i++) {
+        if (i % 2 == 0) {
+            printf("Par: %i\n", i);
+            soma_pares += i; // += -> ele vai fazer soma_pares + i e vai armazenar o numero para fazer a operação novamente com outro numero
+            contador_pares++;
+        } else {
+            printf("impar: %i\n", i);
+            soma_impares += i;
+            contador_impares++;
+        }
+    }
+
+    float percentual_pares = (contador_pares / (float) total_numeros) * 100;
+    float percentual_impares = (contador_impares / (float) total_numeros) * 100;
+
+    printf("\n--- Resultados ---\n");
+    printf("Soma dos números pares: %d\n", soma_pares);
+    printf("Soma dos números ímpares: %d\n", soma_impares);
+    printf("Percentual de números pares: %.2f%%\n", percentual_pares);
+    printf("Percentual de números ímpares: %.2f%%\n", percentual_impares);
+
+    return 0;
+}
