@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int numeros, soma_positivos = 0, contador_negativos = 0; 
+
+    for (int i = 0; i < 20; i++) {
+        printf("Digite o número %d: ", i + 1);
+        scanf("%d", &numeros);
+
+        if (numeros > 0) {
+            soma_positivos += numeros;
+        } else if (numeros < 0) {
+            contador_negativos++;  
+        }
+    }
+
+    printf("\n--- Resultados ---\n");
+    printf("Soma dos números positivos: %d\n", soma_positivos);
+    printf("Quantidade de números negativos: %d\n", contador_negativos);
+
+    return 0;
+}
