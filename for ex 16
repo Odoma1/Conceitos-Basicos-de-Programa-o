@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+	int i, n, maior=999999999999999999, menor=-999999999999999999;
+	float soma=0, media ;
+	for(i=1; i<=5; i++)
+	{
+		printf("Informe um numero:");
+		scanf("%i", &n);
+		soma=soma+i;
+		if(n>maior)
+		{
+			maior= n;
+		}
+		if(n<menor)
+		{
+			menor=n;
+		}
+	}
+	media=soma/5;
+	printf("\nO MAIOR E: %i\n", maior);
+	printf("\nA MEDIA E: %.2f\n", media);
+	printf("\nO MENOR E: %i\n", menor);
+}
