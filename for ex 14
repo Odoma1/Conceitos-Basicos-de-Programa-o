@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	int n, i, prod;
+	printf("Informe a quantidade de numeros que serao lidos:");
+	scanf("%i", &n);
+	for(i=0; i<n; i++)
+	{
+	printf("\nsaida:%i\n", i);
+	prod+= prod * i;
+	}
+	printf("\nNUMERO: %i\n", n);
+	
+	printf("\nProduto: %i\n", prod);
+}
