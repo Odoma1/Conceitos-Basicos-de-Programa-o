@@ -1,0 +1,12 @@
+
+int main() {
+	int n, i, prod;
+	printf("Informe um numero:");
+	scanf("%i", &n);
+	for(i=0; i<n; i++)
+	{
+	prod+= prod * i;
+	}
+
+	printf("\nO FATURIAL DESSE NUMERO e: %i\n", prod);
+}
