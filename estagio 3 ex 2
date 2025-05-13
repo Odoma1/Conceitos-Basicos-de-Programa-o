@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int i, j, n1, n2;
+
+    printf("Digite o tamanho1 do quadrado: ");
+    scanf("%d", &n1);
+    
+    printf("Digite o tamanho2 do quadrado: ");
+    scanf("%d", &n2);
+    
+    for (i = 1; i <= n1; i++) {
+        for (j = 1; j <= n2; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
