@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+	float media;
+	int n, i, soma;
+	for(i=1;i<6;i++)
+	{
+		printf("informe o numero: ");
+		scanf("%i", &n);
+		soma=soma+n;
+	}
+	media=soma/5;
+	printf("a media e: %f", media);
+
+}
