@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+ main() {
+	int i, n, maior=0, menor=0,n1 ;
+	printf("Informe a quantidade de numeros que serão lidos:");
+		scanf("%i", &n);
+	for(i=1; i<=n; i++)
+	{
+		printf("informe os numeros:");
+		scanf("%i", &n1);
+		
+		if(n1 > maior)
+		{
+			maior = n1;
+		}
+		else if(n1 < menor)
+		{
+			menor = n1;
+		}
+	}
+
+	printf("\nO MAIOR E: %i\n", maior);
+	printf("\nO MENOR E: %i\n", menor);
+   
+}
