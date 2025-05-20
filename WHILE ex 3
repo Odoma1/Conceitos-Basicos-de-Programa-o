@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+main()
+{
+	float	num,soma, media;
+	int cont=0;
+	
+	printf("Informe o numero:");
+	scanf("%f", &num);
+	while(num>=0)
+	{
+		
+		printf("Informe o numero:");
+		scanf("%f", &num);
+		soma=soma+num;
+		cont++;
+		printf("Informe o numero:");
+		scanf("%f", &num);
+		
+	}
+	printf("a media e:%.2f\n", soma/cont);
+}
