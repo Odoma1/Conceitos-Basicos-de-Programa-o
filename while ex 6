@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+ main() 
+ {
+    char sex, nome[50];
+    int idade, contf = 0, contm = 0, conti = 0, soma = 0;
+    float media;
+
+    printf("Digite a idade (0 para sair): ");
+    scanf("%i", &idade);
+
+    while (idade != 0) 
+	{
+       printf("Informe o nome:");
+	   fflush(stdin);
+		gets(nome);
+	    printf("Informe o sexo (M/F): ");
+        scanf(" %c", &sex); 
+        
+
+        if (sex == 'f' || sex == 'F') 
+		{
+            contf++;
+        } 
+		else if (sex == 'm' || sex == 'M') 
+		{
+            contm++;
+        }
+		
+        conti++;
+        soma = soma+ idade;
+
+        printf("Digite a idade (0 para sair): ");
+        scanf("%i", &idade);
+    }
+
+    media = soma / conti ;
+
+    printf("Quantidade de pessoas do sexo feminino: %i\n", contf);
+    printf("Quantidade de pessoas do sexo masculino: %i\n", contm);
+    printf("Média aritmética das idades: %.2f\n", media);
+
+}
