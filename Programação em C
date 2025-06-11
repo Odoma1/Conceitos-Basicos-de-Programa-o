@@ -76,3 +76,24 @@ for(i=1; i<=10; i++)
 	{                |=> SOMA DE 2 EM 2
 		printf("%i\n", i);
 += -> ele vai fazer soma + a variavel desejada e vai armazenar o numero para fazer a operação novamente com outro numero
+_____________________________________________________________________________________________________________________________
+MATRIZES E VETORES
+
+int n[5]->matrizes
+	|->n[5] = n1,n2,n3,n4,n5( criação de 5 prateleiras para guardar 5 valores de n)
+n[3]=8
+n[1]=5
+  |->na prateleira 3 o valor é 8 e na prateleira 1 o valor é 5
+main()
+{
+int i, n[5];
+for(i=0;i<5;i++)
+{
+printf("Digite um numero");  -> ARQUIVAR OS VALORES DO VETOR 
+scanf("%d", &n[i]);
+}
+for(i=0;i<5;i++)
+{
+printf("%d\t", &n[i]); ->MOSTRAR OS VALORES DO VERTOR
+soma=soma+n[i]->SOMAR TODOS OS VALORES
+}}
